@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru" class="no-js"> <!--<![endif]-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Bondar test</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header>
+		<h1>Bondar test app (adding, removing and sort list of items)</h1>
+		<h3>Description</h3>
+		<ol>
+			<li>You can sort lists with left navigation buttons</li>
+			<li>You can delete all tasks using delet button</li>
+			<li>You can check current tasks array in console</li>
+			<li>You can chose task status</li>
+			<li>You can add just 20 tasks</li>
+			<li>You can't write name using just a number</li>
+		</ol>
+	</header>
+
+	<div class="main_wrapper">
+		<div class="main_wrapper_content">
+
+			<div class="list_nav">
+				<div class="list_nav_title">
+					filters
+				</div>
+				<div class="nav_buttons">
+					<div title="sort AZ" id="sort_AZ" class="nav_buttons_botton">
+						<img src="img/sortAZ.png" alt="">
+					</div>
+					<div title="sort ZA" id="sort_ZA" class="nav_buttons_botton">
+						<img src="img/sortZA.png" alt="">
+					</div>
+					<div title="sort 12" id="sort_12" class="nav_buttons_botton">
+						<img src="img/sort12.png" alt="">
+					</div>
+					<div title="sort 21" id="sort_21" class="nav_buttons_botton">
+						<img src="img/sort21.png" alt="">
+					</div>
+					<div title="Delete all lists" id="delete_all" class="nav_buttons_botton">
+						<img src="img/delete_all.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="list_wrapper">
+				<div class="search_wrapper">
+					<input maxlength="30" id="name" type="text" placeholder="Task name">
+					<div class="select_inner">
+						<select id="select_status">						
+							<option value="Active">Active</option>
+							<option value="Inactive">Inactive</option>						
+						</select>
+					</div>
+					<div class="add_new_list">add list</div>
+				</div>
+				<div class="list">
+					<div class="list_header">
+						<div class="counter">
+							Num
+						</div>
+						<div class="name">
+							Name
+						</div>
+						<div class="status">
+							Status
+						</div>
+						<div class="delete">
+							Action
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="list_content">
+
+<!-- 						<div class="list_item">
+							<div class="counter">
+								3
+							</div>
+							<div class="name">
+								a
+							</div>
+							<div class="status">
+								Status
+							</div>
+							<div class="delete">
+								<span>delete</span>
+							</div>
+							<div class="clear"></div>
+						</div>	 -->				
+
+					</div>
+				</div>   
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
